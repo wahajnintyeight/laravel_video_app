@@ -18,6 +18,9 @@ class ZoomController extends Controller
     {
         $this->middleware('auth');
     }
+    public function index(){
+        return view('zoom.index');
+    }
     public function show($id)
     {
         $meeting = $this->get($id);

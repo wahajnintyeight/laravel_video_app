@@ -12,8 +12,8 @@
     </div>
     <div class="card-body">
         <ul class="list-group">
-            @if ($meetings->count() > 0)
-            @foreach ($meetings as $meeting)
+            @if ($meetings ?? ''->count() > 0)
+            @foreach ($meetings ?? '' as $meeting)
                 <li class="list-group-item">
                     <div>
                         Meeting Name: <strong>{{$meeting->meeting_name}}</strong>
