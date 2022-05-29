@@ -24,7 +24,7 @@ class ZoomController extends Controller
     public function show($id)
     {
         $meeting = $this->get($id);
-
+        dd($meeting);
         return view('meetings.index', compact('meeting'));
     }
 
